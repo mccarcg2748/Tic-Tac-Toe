@@ -1,0 +1,170 @@
+body{
+  box-sizing: border-box;
+  background-color: #2d629c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title{
+  text-align: center;
+  color: white
+}
+
+.grid {
+  margin-top: 5vh;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 15vh;
+  height: 50vh;
+  width: 50vw;
+  max-height: 1366px;
+  max-width: 1066px;
+  position: relative;
+}
+
+
+
+.letter{
+  margin-top: 25%;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+
+#box1{
+  border-right: solid white 5px;
+  border-bottom: solid white 5px;
+  border-top: none;
+  border-left: none;
+}
+#box2{
+  border-right: solid white 5px;
+  border-bottom: solid white 5px;
+  border-top: none;
+  border-left: solid white 5px;
+}
+#box3{
+  border-right: none;
+  border-bottom: solid white 5px;
+  border-top: none;
+  border-left: solid white 5px;
+}
+#box4{
+  border-right: solid white 5px;
+  border-bottom: solid white 5px;
+  border-top: solid white 5px;
+  border-left: none;
+}
+#box5{
+  border-right: solid white 5px;
+  border-bottom: solid white 5px;
+  border-top: solid white 5px;
+  border-left: solid white 5px;
+}
+#box6{
+  border-right: none;
+  border-bottom: solid white 5px;
+  border-top: solid white 5px;
+  border-left: solid white 5px;
+}
+#box7{
+  border-right: solid white 5px;
+  border-bottom: none;
+  border-top: solid white 5px;
+  border-left: none;
+}
+#box8{
+  border-right: solid white 5px;
+  border-bottom: none;
+  border-top: solid white 5px;
+  border-left: solid white 5px;
+}
+#box9{
+  border-right: none;
+  border-bottom: none;
+  border-top: solid white 5px;
+  border-left: solid white 5px;
+}
+
+
+#player1{
+  padding: 30px;
+  font-size: 40px;
+  color: white;
+  
+}
+
+#player2{
+  padding: 30px;
+  font-size: 40px;
+  color: white;
+}
+
+.spans{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.selected{
+  text-decoration: underline;
+}
+
+.modal{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.modal-content{
+  height: 30vh;
+  width: 75vw;
+  background-color: white;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.text{
+  font-size: 40px;
+  color: #3b93ff;
+}
+
+.btn{
+  border-radius: 20px;
+  color: white;
+  background-color: #3b93ff;
+  border: none;
+  padding: 20px;
+}
+
+
+@media(min-width: 1024px){
+  .letter{
+    font-size: 70px;
+    margin: 0;
+  }
+}
+
+@media(min-width: 2300px){
+  .letter{
+    font-size: 130px
+  }
+  .title{
+    font-size: 70px;
+  }
+  #player1{
+    font-size: 90px;
+    padding: 50px;
+  }
+  #player2{
+    font-size: 90px;
+    padding: 50px;
+  }
+}
